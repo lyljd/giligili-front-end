@@ -81,7 +81,7 @@ const routes = [{
 ]
 
 const router = new VueRouter({
-    //mode: 'history', //使url不会出现#，但nginx设置不对刷新会报错
+    mode: 'history', //使url不会出现#，但nginx设置不对刷新会报错
     routes
 })
 
