@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-// 视频投稿（部署到服务器前记得改url，下方的视频更新同理）
 const postVideo = (form, callback) => axios.post('/api/v1/videos', form, {
     onUploadProgress: function(progressEvent) {
         callback(progressEvent)

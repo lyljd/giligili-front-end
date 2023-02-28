@@ -81,7 +81,9 @@ const routes = [{
 ]
 
 const router = new VueRouter({
-    mode: 'history', //使url不会出现#，但nginx设置不对刷新会报错
+    /*mode: hash or history.
+    history下url不会出现#，但nginx需要设置/下转到index.html，否则某些情况会404*/
+    mode: 'history',
     routes
 })
 
